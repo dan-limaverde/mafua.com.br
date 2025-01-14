@@ -61,7 +61,6 @@ function App() {
     e.preventDefault();
     
     if (validateForm()) {
-      // Properly format the message body with line breaks
       const body = [
         `Nome: ${formData.name}`,
         `Email: ${formData.email}`,
@@ -69,7 +68,6 @@ function App() {
         formData.message
       ].join('\n');
 
-      // Create the mailto link without URLSearchParams to avoid extra ?
       const mailtoLink = `mailto:dan@mafua.com.br?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(body)}`;
 
       window.location.href = mailtoLink;
@@ -101,7 +99,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 py-16 md:py-24 relative">
+    <div className="min-h-screen flex items-center justify-center px-4 py-4 relative">
       {/* Radial glow effect */}
       <div 
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#292D3E] opacity-15 rounded-full blur-[100px]"
@@ -109,13 +107,13 @@ function App() {
       />
       
       <div className="container max-w-[600px] relative">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <img 
-            src="/logo.svg" 
+            src="./logo.svg" 
             alt="Logo" 
-            className="w-[50px] h-[50px] mx-auto mb-4 animate-fade-in delay-300"
+            className="w-[600px] h-[200px] mx-auto animate-fade-in delay-300"
           />
-          <h1 className="text-[32px] md:text-[24px] font-normal mb-2 animate-fade-in delay-500">
+          <h1 className="text-[32px] md:text-[24px] font-normal animate-fade-in delay-500">
             Estamos construindo nosso novo site!
           </h1>
           <p className="text-[18px] md:text-[16px] text-[#AAAAAA] animate-fade-in delay-800">
