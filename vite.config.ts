@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/',
+  base: '/mafua.com.br/',  // Nome do repositório
   plugins: [react()],
   build: {
     outDir: 'dist',
