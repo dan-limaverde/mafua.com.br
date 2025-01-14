@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './', // Configuração para build relativo
+  base: '',  // Deixar vazio para usar caminhos relativos
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],
