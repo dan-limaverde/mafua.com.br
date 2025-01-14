@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'iA Writer Quattro';
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/iawriter-quattro/1.0.0/iAWriterQuattroS-Regular.woff2') format('woff2');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'iA Writer Quattro', sans-serif;
+    @apply text-white bg-gradient-to-b from-[#1A1A2E] to-black min-h-screen;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.delay-300 { animation-delay: 0.3s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-800 { animation-delay: 0.8s; }
+.delay-1200 { animation-delay: 1.2s; }
