@@ -4,12 +4,17 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/project/',  // Nome do repositório no GitHub
+  base: '/',  // Usar raiz pois temos um domínio personalizado
   plugins: [react()],
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
     emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
   },
   optimizeDeps: {
     exclude: ['lucide-react'],
@@ -17,6 +22,12 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  server: {
+    headers: {
+      'Cross-Origin-Embedder-Policy': 'require-corp',
+      'Cross-Origin-Opener-Policy': 'same-origin',
     },
   },
 });
