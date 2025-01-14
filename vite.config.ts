@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/', // Configuração para o domínio raiz
+  base: './', // Configuração para build relativo
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],
