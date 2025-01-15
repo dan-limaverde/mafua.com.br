@@ -1,118 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mafuá</title>
-    <style>
-        @font-face {
-            font-family: 'iA Writer Quattro';
-            src: url('https://cdnjs.cloudflare.com/ajax/libs/iawriter-quattro/1.0.0/iAWriterQuattroS-Regular.woff2') format('woff2');
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'iA Writer Quattro', sans-serif;
-            min-height: 100vh;
-            background: linear-gradient(to bottom, #1A1A2E, #000);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1rem;
-        }
-
-        .container {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            text-align: center;
-        }
-
-        .glow {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 600px;
-            height: 600px;
-            background: #292D3E;
-            opacity: 0.15;
-            border-radius: 50%;
-            filter: blur(100px);
-            transform: translate(-50%, -50%);
-        }
-
-        .logo {
-            width: 600px;
-            max-width: 100%;
-            height: 200px;
-            -o-object-fit: contain;
-               object-fit: contain;
-            margin-bottom: 2rem;
-            opacity: 0;
-            animation: fadeIn 0.5s ease-out 0.3s forwards;
-        }
-
-        .title {
-            font-size: 32px;
-            font-weight: normal;
-            margin-bottom: 0.5rem;
-            opacity: 0;
-            animation: fadeIn 0.5s ease-out 0.5s forwards;
-        }
-
-        .subtitle {
-            font-size: 18px;
-            color: #AAAAAA;
-            opacity: 0;
-            animation: fadeIn 0.5s ease-out 0.8s forwards;
-        }
-
-        .contact {
-            margin-top: 2rem;
-            font-size: 18px;
-            color: #AAAAAA;
-            opacity: 0;
-            animation: fadeIn 0.5s ease-out 1.2s forwards;
-        }
-
-        .contact a {
-            color: #3D5AFE;
-            text-decoration: none;
-            transition: all 0.2s ease-out;
-        }
-
-        .contact a:hover {
-            color: #2C44CC;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @media (max-width: 768px) {
-            .title {
-                font-size: 24px;
-            }
-            .subtitle, .contact {
-                font-size: 16px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="glow"></div>
-    <div class="container">
-        <img src="logo.svg" alt="Logo" class="logo">
-        <h1 class="title">Estamos construindo nosso novo site!</h1>
-        <p class="subtitle">Volte em breve.</p>
-        <p class="contact">Enquanto isso, se precisa falar, escreva para <a href="mailto:dan@mafua.com.br">dan@mafua.com.br</a></p>
-    </div>
-</body>
+    <script type="module" crossorigin src="./assets/index-CMcZC6sV.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BDW8dvC-.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
